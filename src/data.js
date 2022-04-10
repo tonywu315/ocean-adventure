@@ -51,9 +51,9 @@ export const data = {
         name: "Vent Octopus",
         info: "Species: Vulcanoctopus hydrothermalis\nColor: White, semi-translucent\nSize: Up to 56 mm mantle length - very small\nHabitat: East Pacific Rise (mid-oceanic ridge southwest of Mexico)\nPrey: Crabs and amphipods\nBehavior: Crawl using touch and smell as their eyes do not function well and are insensitive to light\nFun Fact: Is the only species known to live by hydrothermal vents is the only species part of the genus Vulcanoctopus",
     },
-    "png name": {
-        name: "nameofcreature",
-        info: "restoftext\nmoretext\n",
+    "phytoplankton": {
+        name: "Phytoplankton",
+        info: "These microscopic organisms are numerous in the ocean and their photosynthesis creates the energy that is the foundation of the ocean ecosystem. It also provides 50-80% of oxygen production on Earth. ",
     },
     hydrothermal_vent: {
         name: "Hydrothermic Vent",
