@@ -7,7 +7,7 @@ export default class Transition extends React.Component {
 
         return (
             <div className="transition">
-                <img src={`../assets/${animal}.png`} alt="fail" />
+                <img className="abcd" src={`../assets/${animal}.png`} alt="fail" />
             </div>
         );
     };
