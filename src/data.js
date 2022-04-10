@@ -59,8 +59,8 @@ export const data = {
         name: "Hydrothermic Vent",
         info: "Hydrothermal vents are fissures in the sea floor which form in areas where tectonic plates are moving apart. The liquid it expels is high in minerals and nutrients which causes small ecological communities to form around vents.",
     },
-    "png name": {
-        name: "nameofcreature",
-        info: "restoftext\nmoretext\n",
+    "jellyfish": {
+        name: "Giant Phantom Jelly",
+        info: "Species: Stygiomedusa gigantea\nColor: Red-orange but may appear invisible in the deep ocean\nSize: The bell can grow up to 1m but the “arms” can stretch 4-5x that length\nHabitat: Widespread\nPrey: Plankton and small fish\nBehavior: Observed to be more common around hydrothermal vents\nFun Fact: It has only been sighted 27 times in the last 27 years due to its habitat’s depth",
     },
 };
