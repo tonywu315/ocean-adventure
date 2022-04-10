@@ -14,15 +14,20 @@ export default class Creature extends React.Component {
         const height = this.props.size;
 
         let caption = <></>;
-        if (this.state.caption) {
+        if (this.state.caption && !this.props.nocaption) {
             const creature = data[name];
 
             if (creature != undefined) {
                 const text = creature.info
                     .split("\n")
                     .map((str) => <p key={str}>{str}</p>);
+                const captionLeft = this.props.captionX + "px";
+                const captionTop = this.props.captionY + "px";
                 caption = (
-                    <div className="caption">
+                    <div
+                        className="caption"
+                        style={{ top: captionTop, left: captionLeft }}
+                    >
                         <span className="caption-name">{creature.name}</span>
                         {text}
                     </div>
@@ -37,6 +42,7 @@ export default class Creature extends React.Component {
                 <img
                     src={`../assets/${name}.png `}
                     height={height}
+                    draggable={false}
                     onMouseEnter={() => this.setState({ caption: true })}
                     onMouseLeave={() => this.setState({ caption: false })}
                 />

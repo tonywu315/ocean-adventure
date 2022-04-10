@@ -12,11 +12,26 @@ export default class Home extends React.Component {
     render = () => {
         return (
             <div id="home-container">
-                <img id="background" src={`../assets/home.png`} />
-                <p id="center-text">95% of the Ocean is Unexplored ...</p>
-                <Link to="/ocean" id="start-button" className="btn btn-primary">
-                    Click to Start
-                </Link>
+                <img
+                    id="background"
+                    src={`../assets/home.png`}
+                    draggable={false}
+                />
+                <div id="center-container">
+                    <p id="center-text">
+                        Ocean <br />
+                        Adventure
+                    </p>
+                </div>
+                <div id="start-container">
+                    <Link
+                        to="/ocean"
+                        id="start-button"
+                        className="btn btn-primary"
+                    >
+                        Click to Start
+                    </Link>
+                </div>
             </div>
         );
     };

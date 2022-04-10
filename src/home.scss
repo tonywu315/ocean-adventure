@@ -7,30 +7,64 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        user-select: none;
     }
 
-    #center-text {
-        position: absolute;
-        text-align: center;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        font-size: 40px;
+    #center-container {
+        display: inline-block;
+        animation: fadeIn 3s linear forwards;
+        -webkit-animation: fadeIn 3s linear forwards;
+
+        #center-text {
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 64px;
+        }
     }
 
-    #start-button {
-        position: absolute;
-        text-align: center;
-        top: 80%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        font-size: 40px;
-        text-decoration: none;
+    #start-container {
+        display: inline-block;
+        opacity: 0;
+        animation-delay: 3s;
+        animation: fadeIn s linear forwards;
+        -webkit-animation: fadeIn 3s linear forwards;
+        animation-delay: 3s;
+        -webkit-animation-delay: 3s;
+
+        #start-button {
+            position: absolute;
+            text-align: center;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 40px;
+            text-decoration: none;
+        }
     }
 
     #start-button:hover {
         color: #cccccc;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

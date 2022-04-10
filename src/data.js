@@ -33,7 +33,7 @@ export const data = {
     },
     sperm_whale: {
         name: "Sperm Whale",
-        info: "Species: Physeter macrocephalus\nColor: Dark gray\nSize: Up to 65 ft in length\nHabitat: Usually cold water areas, close to all waters that are over 1000 meters deep that do not have ice above\nPrey: Mainly deep water squid, including the giant squid as well as sharks, octopi, and fish\nBehavior: Recovering from being over hunted by the commercial whaling industry throughout the 1800s and 1900s; they are currently listed as endangered\nFun Fact: Possess the largest brain of any living animal and can dive beyond 1.9 miles or 3,000 meters\nSecond Fact: Sperm whales are named after the large spermaceti organ located in the forehead region.  The organ is capable of holding up to 1,900 liters or 500 gallons of wax-like oil.  Its purpose is believed to be for assisting dives through adjusting its buoyancy as well as the oil being used to help sperm whales echolocate.",
+        info: "Species: Physeter macrocephalus\nColor: Dark gray\nSize: Up to 65 ft in length\nHabitat: Usually cold water areas, close to all waters that are over 1000 meters deep that do not have ice above\nPrey: Mainly deep water squid, including the giant squid as well as sharks, octopi, and fish\nBehavior: Recovering from being over hunted by the commercial whaling industry throughout the 1800s and 1900s; they are currently listed as endangered\nFun Fact: Possess the largest brain of any living animal and can dive beyond 1.9 miles or 3,000 meters",
     },
     blobfish: {
         name: "Blobfish",
@@ -51,7 +51,7 @@ export const data = {
         name: "Vent Octopus",
         info: "Species: Vulcanoctopus hydrothermalis\nColor: White, semi-translucent\nSize: Up to 56 mm mantle length - very small\nHabitat: East Pacific Rise (mid-oceanic ridge southwest of Mexico)\nPrey: Crabs and amphipods\nBehavior: Crawl using touch and smell as their eyes do not function well and are insensitive to light\nFun Fact: Is the only species known to live by hydrothermal vents is the only species part of the genus Vulcanoctopus",
     },
-    "phytoplankton": {
+    phytoplankton: {
         name: "Phytoplankton",
         info: "These microscopic organisms are numerous in the ocean and their photosynthesis creates the energy that is the foundation of the ocean ecosystem. It also provides 50-80% of oxygen production on Earth. ",
     },
@@ -59,7 +59,7 @@ export const data = {
         name: "Hydrothermic Vent",
         info: "Hydrothermal vents are fissures in the sea floor which form in areas where tectonic plates are moving apart. The liquid it expels is high in minerals and nutrients which causes small ecological communities to form around vents.",
     },
-    "jellyfish": {
+    jellyfish: {
         name: "Giant Phantom Jelly",
         info: "Species: Stygiomedusa gigantea\nColor: Red-orange but may appear invisible in the deep ocean\nSize: The bell can grow up to 1m but the “arms” can stretch 4-5x that length\nHabitat: Widespread\nPrey: Plankton and small fish\nBehavior: Observed to be more common around hydrothermal vents\nFun Fact: It has only been sighted 27 times in the last 27 years due to its habitat’s depth",
     },

@@ -1,10 +1,10 @@
 .creature {
     position: absolute;
+    user-select: none;
 }
 
 .caption {
     position: absolute;
-    top: -300px;
     display: inline-flex;
     flex-direction: column;
     height: auto;
