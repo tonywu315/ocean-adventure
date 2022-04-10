@@ -43,6 +43,8 @@ export default class Ocean extends React.Component {
 
         return (
             <div className="ocean">
+                <p id="introduction"> Scroll down to explore. Hover over each image for more information.</p>
+
                 <Creature name="phytoplankton" x={50} y={1100} size={150} />
                 <Creature name="seaturtle" x={76} y={1250} size={120} />
                 <Creature name="dolphin" x={10} y={1200} size={180} />
