@@ -1,16 +1,16 @@
 import React from "react";
-import "./transition.scss";
+import "./creature.scss";
 
-export default class Transition extends React.Component {
+export default class Creature extends React.Component {
     render = () => {
-        const animal = this.props.animal;
+        const name = this.props.name;
         const left = this.props.x + "%";
         const top = this.props.y + "px";
         const height = this.props.size;
 
         return (
             <div
-                className="transition"
+                className="creature"
                 style={{
                     position: "absolute",
                     top: top,
@@ -18,7 +18,7 @@ export default class Transition extends React.Component {
                     height: height,
                 }}
             >
-                <img src={`../assets/${animal}.png `} height={height} />
+                <img src={`../assets/${name}.png `} height={height} />
             </div>
         );
     };

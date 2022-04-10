@@ -1,6 +1,6 @@
 import React from "react";
 import Particles from "react-tsparticles";
-import Transition from "./transition";
+import Creature from "./creature";
 import "./ocean.scss";
 
 const startColor = [25, 171, 222];
@@ -41,51 +41,41 @@ export default class Ocean extends React.Component {
 
         return (
             <div className="ocean">
-                <Transition animal="phytoplankton" x={50} y={1100} size={150} />
-                <Transition animal="seaturtle" x={76} y={1250} size={200} />
-                <Transition animal="dolphin" x={20} y={1275} size={200} />
-                <Transition animal="bluefin_tuna" x={40} y={1400} size={200} />
-                <Transition
-                    animal="school_of_fish"
-                    x={65}
-                    y={1600}
-                    size={200}
-                />
-                <Transition animal="tigershark" x={0.5} y={1650} size={200} />
-                <Transition animal="octopus" x={50} y={2700} size={425} />
-                <Transition animal="bristlemouth" x={50} y={3050} size={150} />
-                <Transition animal="sperm_whale" x={16} y={3800} size={450} />
-                <Transition animal="giant_squid" x={7} y={4300} size={375} />
-                <Transition animal="blobfish" x={77} y={5000} size={200} />
-                <Transition animal="jellyfish" x={16} y={5800} size={800} />
-                <Transition
-                    animal="red_velvet_whale_fish"
+                <Creature name="phytoplankton" x={50} y={1100} size={150} />
+                <Creature name="seaturtle" x={76} y={1250} size={200} />
+                <Creature name="dolphin" x={20} y={1275} size={200} />
+                <Creature name="bluefin_tuna" x={40} y={1400} size={200} />
+                <Creature name="school_of_fish" x={65} y={1600} size={200} />
+                <Creature name="tigershark" x={0.5} y={1650} size={200} />
+                <Creature name="octopus" x={50} y={2700} size={425} />
+                <Creature name="bristlemouth" x={50} y={3050} size={150} />
+                <Creature name="sperm_whale" x={16} y={3800} size={450} />
+                <Creature name="giant_squid" x={7} y={4300} size={375} />
+                <Creature name="blobfish" x={77} y={5000} size={200} />
+                <Creature name="jellyfish" x={16} y={5800} size={800} />
+                <Creature
+                    name="red_velvet_whale_fish"
                     x={34}
                     y={7800}
                     size={100}
                 />
-                <Transition
-                    animal="humpback_angler_fish"
+                <Creature
+                    name="humpback_angler_fish"
                     x={45}
                     y={8800}
                     size={250}
                 />
-                <Transition
-                    animal="humpback_angler_fish"
+                <Creature
+                    name="humpback_angler_fish"
                     x={55}
                     y={8850}
                     size={40}
                 />
-                <Transition
-                    animal="hydrothermal_vent"
-                    x={5}
-                    y={9497}
-                    size={500}
-                />
-                <Transition
-                    animal="vulcanoctopus_hydrothermalis"
-                    x={10}
-                    y={9547}
+                <Creature name="hydrothermal_vent" x={5} y={9497} size={500} />
+                <Creature
+                    name="vulcanoctopus_hydrothermalis"
+                    x={8}
+                    y={9657}
                     size={200}
                 />
                 <Particles
