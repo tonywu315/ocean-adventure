@@ -1,3 +1,12 @@
 .ocean {
     height: 10000px;
+    width: 100%;
+    overflow: hidden;
+
+    #background {
+        z-index: -2;
+        position: absolute;
+        height: 10000px;
+        width: 100%;
+    }
 }
