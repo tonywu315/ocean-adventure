@@ -11,22 +11,22 @@ export default class Ocean extends React.Component {
 
         return (
             <div className="ocean">
-		    <Transition animal="phytoplankton" />
-		    <Transition animal="school_of_fish"/>
- 	          <Transition animal="school_of_fish2"/>
- <Transition animal="seaturtle"/>
-	          <Transition animal="dolphin" />
- <Transition animal="tigershark"/>
- <Transition animal="correct_giant_squid"/> 
- <Transition animal="octopus"/>
- <Transition animal="bristlemouth"/>
-<Transition animal="sperm_whale"/>
-<Transition animal="blobfish"/>
-<Transition animal="jellyfish"/>
-<Transition animal="red_velvet_whale_fish"/>
-<Transition animal="humpback_angler_fish"/>
-<Transition animal="vulcanoctopus_hydrothermalis"/>
-<Transition animal="hydrothermal_vent"/>
+		    <Transition animal="phytoplankton" x={10} y={10} size={100}/>
+		    <Transition animal="school_of_fish" x={10} y={10} size={100}/>
+ 	          <Transition animal="school_of_fish2" x={10} y={10} size={100}/>
+ <Transition animal="seaturtle" x={10} y={10} size={100}/>
+	          <Transition animal="dolphin" x={10} y={10} size={100}/>
+ <Transition animal="tigershark" x={10} y={10} size={100}/>
+ <Transition animal="correct_giant_squid" x={10} y={10} size={100}/> 
+ <Transition animal="octopus" x={10} y={10} size={100}/>
+ <Transition animal="bristlemouth" x={10} y={10} size={100}/>
+<Transition animal="sperm_whale" x={10} y={10} size={100}/>
+<Transition animal="blobfish" x={10} y={10} size={100}/>
+<Transition animal="jellyfish" x={10} y={500} size={100}/>
+<Transition animal="red_velvet_whale_fish" x={10} y={10} size={100}/>
+<Transition animal="humpback_angler_fish" x={10} y={10} size={100}/>
+<Transition animal="vulcanoctopus_hydrothermalis" x={10} y={10} size={100}/>
+<Transition animal="hydrothermal_vent" x={10} y={10} size={100}/>
 
                 {/* <Transition />
                 <Transition />
