@@ -11,28 +11,33 @@
     }
 
     #center-container {
+        position: absolute;
+        top: 35%;
+        left: 30%;
+        transform: translate(-50%, -50%);
         display: inline-block;
         animation: fadeIn 3s linear forwards;
         -webkit-animation: fadeIn 3s linear forwards;
 
-        #center-text {
-            position: absolute;
-            top: 30%;
-            left: 30%;
-            transform: translate(-50%, -50%);
+        #center-title {
+            margin-bottom: 16px;
             color: white;
-            font-size: 64px;
+            font-size: 70px;
+        }
+
+        #center-subtitle {
+            color: white;
+            font-size: 20px;
         }
     }
 
     #start-container {
         display: inline-block;
         opacity: 0;
-        animation-delay: 3s;
-        animation: fadeIn s linear forwards;
+        animation: fadeIn 3s linear forwards;
         -webkit-animation: fadeIn 3s linear forwards;
-        animation-delay: 3s;
-        -webkit-animation-delay: 3s;
+        animation-delay: 2s;
+        -webkit-animation-delay: 2s;
 
         #start-button {
             position: absolute;

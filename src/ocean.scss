@@ -10,33 +10,69 @@
         width: 100%;
     }
 
-#introduction {
-	  padding-left: 250px;
-        padding-top: 200px;
+    #wave-container {
+        height: 150px;
+
+        #wave {
+            height: 150px;
+        }
+    }
+
+    .ocean-text {
         position: absolute;
-	  font-size: 40px;   
-}
-#sunlight {
-	  padding-left: 250px;
-	  padding-right: 250px;
-        padding-top: 850px;
-        position: absolute;
-	  font-size: 30px;   
-}
-#twilight {
-	  padding-left: 250px;
-	  padding-right: 250px;
-        padding-top: 2200px;
-        position: absolute;
-	  font-size: 30px;   
-}
-#midnight {
-	  padding-left: 250px;
-	  padding-right: 250px;
-        padding-top: 5500px;
-        position: absolute;
-	  font-size: 30px;  
-color:white 
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 700px;
+        color: white;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .ocean-header {
+        font-size: 48px;
+        padding-bottom: 12px;
+    }
+
+    #introduction {
+        top: 40vh;
+        font-size: 40px;
+        animation: fadeIn 2s linear forwards;
+        -webkit-animation: fadeIn 2s linear forwards;
+    }
+
+    #sunlight {
+        top: 900px;
+    }
+
+    #twilight {
+        top: 2350px;
+    }
+
+    #midnight {
+        top: 5550px;
+    }
+
+    #pollution {
+        top: 9975px;
+        left: 84%;
+        width: 240px;
+    }
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

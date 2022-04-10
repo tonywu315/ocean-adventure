@@ -1,5 +1,6 @@
 import React from "react";
 import Particles from "react-tsparticles";
+import Wave from "react-wavify";
 import Creature from "./creature";
 import "./ocean.scss";
 
@@ -43,46 +44,42 @@ export default class Ocean extends React.Component {
 
         return (
             <div className="ocean">
-                <p id="introduction">
-                    Scroll down to explore. Hover over each image for more
-                    information.
+                <p id="introduction" className="ocean-text">
+                    Scroll down to explore the ocean! <br /> Hover over
+                    creatures for more information.
                 </p>
-                <p id="sunlight">
-                    The sunlight layer is the only layer of the ocean which
-                    receives sunlight meaning it is the only layer where
-                    photosynthesis may occur. Most photosynthesis is performed
-                    by microscopic phytoplankton. When the ocean floor is
-                    shallow you also find seaweed and algae growing on it. This
-                    relative abundanceo of energy means most of the life in the
-                    ocean lives in this small layer including sharks, sea
-                    turtles, and most fish that we eat.
-                </p>
-                <p id="twilight">
-                    There is very little visible light in the twilight layer
-                    meaning animals in it must survive either by hunting in
-                    shallower waters or consuming particles which drift down
-                    from above. The water temperature decreases dramatically in
-                    this layer from around 20° celsius to around 5° celsius. Due
-                    to the lack of light many creatures develop bioluminescence
-                    which allows them to create their own light using chemical
-                    reactions. Animals that live here include the giant squid,
-                    sperm whale, and octopus
-                </p>
-                <p id="midnight">
-                    The midnight layer's name comes from the complete lack of
-                    light that penetrates into it. To adapt to the lack of light
-                    and nutrients in this layer many of the organisms in it do
-                    not have eyes, have weak muscles, and/or metabolize slowly.
-                    Many of the organisms here survive off of deep sea vents as
-                    they are one of the few sources of nutrients on the ocean
-                    floor. Examples of animals which live here include
-                    anglerfish, whalefish, and jellyfish.
-                </p>
+                <div id="sunlight" className="ocean-text">
+                    <p className="ocean-header">The Sunlight Layer</p>
+                    In the only layer that receives sunlight, photosynthesis by
+                    phytoplankton and algae provide an abundance of energy. Most
+                    of the life in the ocean lives here!
+                </div>
+                <div id="twilight" className="ocean-text">
+                    <p className="ocean-header">The Twilight Layer</p>
+                    <p>
+                        Organisms here must survive either by hunting in
+                        shallower waters or consuming particles which drift down
+                        from above. Due to the lack of light, many creatures
+                        develop bioluminescence!
+                    </p>
+                </div>
+                <div id="midnight" className="ocean-text">
+                    <p className="ocean-header">The Midnight Layer</p>
+                    <p>
+                        To adapt to the lack of light and nutrients, many
+                        organisms do not have eyes, have weak muscles, and/or
+                        metabolize slowly. Deep sea vents are one of the few
+                        sources of nutrients here.
+                    </p>
+                </div>
+                <div id="pollution" className="ocean-text">
+                    Uh-oh! Even in the deepest of places, pollution permeates.
+                </div>
 
                 <Creature
                     name="phytoplankton"
                     x={50}
-                    y={1100}
+                    y={1350}
                     size={150}
                     captionX={-160}
                     captionY={-180}
@@ -90,7 +87,7 @@ export default class Ocean extends React.Component {
                 <Creature
                     name="seaturtle"
                     x={76}
-                    y={1250}
+                    y={1500}
                     size={120}
                     captionX={-150}
                     captionY={-290}
@@ -98,7 +95,7 @@ export default class Ocean extends React.Component {
                 <Creature
                     name="dolphin"
                     x={10}
-                    y={1200}
+                    y={1450}
                     size={180}
                     captionX={-36}
                     captionY={-300}
@@ -106,7 +103,7 @@ export default class Ocean extends React.Component {
                 <Creature
                     name="bluefin_tuna"
                     x={40}
-                    y={1400}
+                    y={1650}
                     size={160}
                     captionX={-60}
                     captionY={-250}
@@ -114,7 +111,7 @@ export default class Ocean extends React.Component {
                 <Creature
                     name="school_of_fish"
                     x={65}
-                    y={1600}
+                    y={1850}
                     size={150}
                     captionX={-85}
                     captionY={-165}
@@ -122,7 +119,7 @@ export default class Ocean extends React.Component {
                 <Creature
                     name="tigershark"
                     x={5}
-                    y={1800}
+                    y={1950}
                     size={180}
                     captionX={0}
                     captionY={-350}
@@ -130,7 +127,7 @@ export default class Ocean extends React.Component {
                 <Creature
                     name="octopus"
                     x={40}
-                    y={2650}
+                    y={2850}
                     size={400}
                     captionX={-450}
                     captionY={16}
@@ -138,15 +135,15 @@ export default class Ocean extends React.Component {
                 <Creature
                     name="bristlemouth"
                     x={20}
-                    y={3200}
+                    y={3400}
                     size={100}
-                    captionX={-32}
-                    captionY={-290}
+                    captionX={380}
+                    captionY={-90}
                 />
                 <Creature
                     name="sperm_whale"
                     x={16}
-                    y={3800}
+                    y={3950}
                     size={450}
                     captionX={175}
                     captionY={-330}
@@ -154,7 +151,7 @@ export default class Ocean extends React.Component {
                 <Creature
                     name="giant_squid"
                     x={7}
-                    y={4300}
+                    y={4450}
                     size={375}
                     captionX={650}
                     captionY={-315}
@@ -162,7 +159,7 @@ export default class Ocean extends React.Component {
                 <Creature
                     name="blobfish"
                     x={20}
-                    y={5000}
+                    y={5150}
                     size={200}
                     captionX={200}
                     captionY={-36}
@@ -170,7 +167,7 @@ export default class Ocean extends React.Component {
                 <Creature
                     name="jellyfish"
                     x={20}
-                    y={5800}
+                    y={6100}
                     size={800}
                     captionX={450}
                     captionY={240}
@@ -178,7 +175,7 @@ export default class Ocean extends React.Component {
                 <Creature
                     name="red_velvet_whale_fish"
                     x={50}
-                    y={7800}
+                    y={7950}
                     size={60}
                     captionX={-480}
                     captionY={-135}
@@ -186,7 +183,7 @@ export default class Ocean extends React.Component {
                 <Creature
                     name="humpback_angler_fish"
                     x={15}
-                    y={8800}
+                    y={8950}
                     size={250}
                     captionX={415}
                     captionY={-40}
@@ -194,14 +191,14 @@ export default class Ocean extends React.Component {
                 <Creature
                     name="humpback_angler_fish"
                     x={25}
-                    y={8850}
+                    y={9000}
                     size={40}
                     nocaption
                 />
                 <Creature
                     name="hydrothermal_vent"
                     x={5}
-                    y={9497}
+                    y={9647}
                     size={500}
                     captionX={380}
                     captionY={0}
@@ -209,7 +206,7 @@ export default class Ocean extends React.Component {
                 <Creature
                     name="vulcanoctopus_hydrothermalis"
                     x={8}
-                    y={9657}
+                    y={9807}
                     size={200}
                     captionX={380}
                     captionY={-30}
@@ -217,11 +214,35 @@ export default class Ocean extends React.Component {
                 <Creature
                     name="plastic_bag"
                     x={80}
-                    y={9700}
+                    y={9850}
                     size={100}
                     captionX={0}
                     captionY={-400}
                 />
+                <div id="wave-container">
+                    <div></div>
+                    <Wave
+                        id="wave"
+                        fill="url(#gradient)"
+                        options={{
+                            height: 40,
+                            amplitude: 30,
+                            speed: 0.15,
+                            points: 5,
+                        }}
+                    >
+                        <defs>
+                            <linearGradient
+                                id="gradient"
+                                gradientTransform="rotate(90)"
+                            >
+                                <stop offset="10%" stopColor="#B8DDF0" />
+                                <stop offset="90%" stopColor="#19ABDE" />
+                            </linearGradient>
+                        </defs>
+                    </Wave>
+                </div>
+
                 <Particles
                     id="tsparticles"
                     options={{

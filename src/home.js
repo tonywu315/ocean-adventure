@@ -2,13 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./home.scss";
 
-require("../assets/home.png");
-
 export default class Home extends React.Component {
-    // componentDidMount = () => {
-    //     document.addEventListener("keydown", this.handleKeyPress, false);
-    // }
-
     render = () => {
         return (
             <div id="home-container">
@@ -18,9 +12,12 @@ export default class Home extends React.Component {
                     draggable={false}
                 />
                 <div id="center-container">
-                    <p id="center-text">
+                    <p id="center-title">
                         Ocean <br />
                         Adventure
+                    </p>
+                    <p id="center-subtitle">
+                        95% remains unexplored ...
                     </p>
                 </div>
                 <div id="start-container">
