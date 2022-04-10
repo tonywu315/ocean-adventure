@@ -3,36 +3,56 @@ import Particles from "react-tsparticles";
 import Transition from "./transition";
 import "./ocean.scss";
 
+const startColor = [25, 171, 222];
+
 export default class Ocean extends React.Component {
+    getGradient = (percent) => {
+        return (
+            "rgb(" + [startColor.map((color) => color * (1 - percent))] + ")"
+        );
+    };
+
     render = () => {
-        let background = "#0d47a1";
+        console.log(this.getGradient(1));
+        let background = this.getGradient(1);
         let lightOpacity = 1;
-        // background = "#000000";
 
         return (
             <div className="ocean">
-		    <Transition animal="phytoplankton" x={10} y={10} size={100}/>
-		    <Transition animal="school_of_fish" x={10} y={10} size={100}/>
- 	          <Transition animal="school_of_fish2" x={10} y={10} size={100}/>
- <Transition animal="seaturtle" x={10} y={10} size={100}/>
-	          <Transition animal="dolphin" x={10} y={10} size={100}/>
- <Transition animal="tigershark" x={10} y={10} size={100}/>
- <Transition animal="correct_giant_squid" x={10} y={10} size={100}/> 
- <Transition animal="octopus" x={10} y={10} size={100}/>
- <Transition animal="bristlemouth" x={10} y={10} size={100}/>
-<Transition animal="sperm_whale" x={10} y={10} size={100}/>
-<Transition animal="blobfish" x={10} y={10} size={100}/>
-<Transition animal="jellyfish" x={10} y={500} size={100}/>
-<Transition animal="red_velvet_whale_fish" x={10} y={10} size={100}/>
-<Transition animal="humpback_angler_fish" x={10} y={10} size={100}/>
-<Transition animal="vulcanoctopus_hydrothermalis" x={10} y={10} size={100}/>
-<Transition animal="hydrothermal_vent" x={10} y={10} size={100}/>
-
-                {/* <Transition />
-                <Transition />
-                <Transition />
-                <Transition />
-                <Transition /> */}
+                <Transition animal="phytoplankton" x={10} y={100} size={200} />
+                <Transition animal="seaturtle" x={10} y={200} size={200} />
+                <Transition animal="dolphin" x={10} y={300} size={200} />
+                <Transition animal="tigershark" x={10} y={400} size={200} />
+                <Transition animal="giant_squid" x={10} y={500} size={200} />
+                <Transition animal="octopus" x={10} y={600} size={200} />
+                <Transition animal="bristlemouth" x={10} y={700} size={200} />
+                <Transition animal="sperm_whale" x={10} y={800} size={200} />
+                <Transition animal="blobfish" x={10} y={900} size={200} />
+                <Transition animal="jellyfish" x={10} y={1000} size={200} />
+                <Transition
+                    animal="red_velvet_whale_fish"
+                    x={10}
+                    y={1100}
+                    size={200}
+                />
+                <Transition
+                    animal="humpback_angler_fish"
+                    x={10}
+                    y={1200}
+                    size={200}
+                />
+                <Transition
+                    animal="vulcanoctopus_hydrothermalis"
+                    x={10}
+                    y={1300}
+                    size={200}
+                />
+                <Transition
+                    animal="hydrothermal_vent"
+                    x={10}
+                    y={1400}
+                    size={200}
+                />
                 <Particles
                     id="tsparticles"
                     options={{
@@ -77,7 +97,7 @@ export default class Ocean extends React.Component {
                         },
                         fullScreen: {
                             zIndex: -1,
-                        }
+                        },
                     }}
                 />
             </div>

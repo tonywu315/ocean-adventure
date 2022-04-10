@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./home.js";
 import Ocean from "./ocean.js";
+import "./main.scss";
 
 class App extends React.Component {
     render = () => (
