@@ -32,7 +32,9 @@ export default class Ocean extends React.Component {
             document.documentElement.clientHeight;
         const scroll = winScroll / height;
 
-        this.setState({ scroll });
+        if (Math.abs(this.state.scroll - scroll) > 0.01) {
+            this.setState({ scroll });
+        }
     };
 
     render = () => {
@@ -42,22 +44,22 @@ export default class Ocean extends React.Component {
         return (
             <div className="ocean">
                 <Creature name="phytoplankton" x={50} y={1100} size={150} />
-                <Creature name="seaturtle" x={76} y={1250} size={200} />
-                <Creature name="dolphin" x={20} y={1275} size={200} />
-                <Creature name="bluefin_tuna" x={40} y={1400} size={200} />
-                <Creature name="school_of_fish" x={65} y={1600} size={200} />
-                <Creature name="tigershark" x={0.5} y={1650} size={200} />
-                <Creature name="octopus" x={50} y={2700} size={425} />
-                <Creature name="bristlemouth" x={50} y={3050} size={150} />
+                <Creature name="seaturtle" x={76} y={1250} size={120} />
+                <Creature name="dolphin" x={10} y={1200} size={180} />
+                <Creature name="bluefin_tuna" x={40} y={1400} size={160} />
+                <Creature name="school_of_fish" x={65} y={1600} size={150} />
+                <Creature name="tigershark" x={5} y={1800} size={180} />
+                <Creature name="octopus" x={40} y={2650} size={400} />
+                <Creature name="bristlemouth" x={20} y={3200} size={100} />
                 <Creature name="sperm_whale" x={16} y={3800} size={450} />
                 <Creature name="giant_squid" x={7} y={4300} size={375} />
-                <Creature name="blobfish" x={77} y={5000} size={200} />
-                <Creature name="jellyfish" x={16} y={5800} size={800} />
+                <Creature name="blobfish" x={20} y={5000} size={200} />
+                <Creature name="jellyfish" x={30} y={5800} size={800} />
                 <Creature
                     name="red_velvet_whale_fish"
                     x={34}
                     y={7800}
-                    size={100}
+                    size={60}
                 />
                 <Creature
                     name="humpback_angler_fish"
@@ -124,7 +126,7 @@ export default class Ocean extends React.Component {
                             },
                         },
                         fullScreen: {
-                            zIndex: -1,
+                            zIndex: 1,
                         },
                     }}
                 />

@@ -4,8 +4,8 @@
     overflow: hidden;
 
     #background {
-        z-index: -2;
         position: absolute;
+        z-index: -1;
         height: 10000px;
         width: 100%;
     }
