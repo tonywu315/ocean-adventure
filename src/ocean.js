@@ -11,7 +11,8 @@ export default class Ocean extends React.Component {
 
         return (
             <div className="ocean">
-                <Transition animal="dolphin" />
+		    <Transition animal="phytoplankton" />
+	          <Transition animal="dolphin" />
                 {/* <Transition />
                 <Transition />
                 <Transition />
