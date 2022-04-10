@@ -4,7 +4,7 @@ import "./transition.scss";
 export default class Transition extends React.Component {
     render = () => {
         const animal = this.props.animal;
-        const left = this.props.x + "px";
+        const left = this.props.x + "%";
         const top = this.props.y + "px";
         const height = this.props.size;
 
