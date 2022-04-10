@@ -16,7 +16,7 @@ export default class Ocean extends React.Component {
  	          <Transition animal="school_of_fish2/>
  <Transition animal="seaturtle"/>
 	          <Transition animal="dolphin" />
- <Transition animal="tigershark/>
+ <Transition animal="tigershark"/>
  <Transition animal="correct_giant_squid"/> 
  <Transition animal="octopus"/>
  <Transition animal="bristlemouth"/>
