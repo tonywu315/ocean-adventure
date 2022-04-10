@@ -44,6 +44,9 @@ export default class Ocean extends React.Component {
         return (
             <div className="ocean">
                 <p id="introduction"> Scroll down to explore. Hover over each image for more information.</p>
+		    <p id="sunlight"> The sunlight layer is the only layer of the ocean which receives sunlight meaning it is the only layer where photosynthesis may occur. Most photosynthesis is performed by microscopic phytoplankton. When the ocean floor is shallow you also find seaweed and algae growing on it. This relative abundanceo of energy means most of the life in the ocean lives in this small layer including sharks, sea turtles, and most fish that we eat.</p>
+		    <p id="twilight"> There is very little visible light in the twilight layer meaning animals in it must survive either by hunting in shallower waters or consuming particles which drift down from above. The water temperature decreases dramatically in this layer from around 20° celsius to around 5° celsius. Due to the lack of light many creatures develop bioluminescence which allows them to create their own light using chemical reactions. Animals that live here include the giant squid, sperm whale, and octopus</p>
+		    <p id="midnight"> The midnight layer’s name comes from the complete lack of light that penetrates into it. To adapt to the lack of light and nutrients in this layer many of the organisms in it do not have eyes, have weak muscles, and/or metabolize slowly. Many of the organisms here survive off of deep sea vents as they are one of the few sources of nutrients on the ocean floor. Examples of animals which live here include anglerfish, whalefish, and jellyfish.</p>
 
                 <Creature name="phytoplankton" x={50} y={1100} size={150} />
                 <Creature name="seaturtle" x={76} y={1250} size={120} />
