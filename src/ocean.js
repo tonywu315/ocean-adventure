@@ -73,13 +73,14 @@ export default class Ocean extends React.Component {
                     y={8850}
                     size={40}
                 />
-                <Creature name="hydrothermal_vent" x={5} y={9497} size={500} />
+                <Creature name="hydrothermal_vent" x={65} y={9497} size={500} />
                 <Creature
                     name="vulcanoctopus_hydrothermalis"
-                    x={8}
+                    x={68}
                     y={9657}
                     size={200}
                 />
+                <Creature name="plastic_bag" x={80} y={9700} size={100} />
                 <Particles
                     id="tsparticles"
                     options={{
