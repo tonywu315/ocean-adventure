@@ -1,7 +1,7 @@
 var path = require('path');
 
 module.exports = {
-    mode: "development",
+    mode: "production",
     devServer: {
         host: "localhost",
         port: 8000,

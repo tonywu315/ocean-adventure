@@ -9,8 +9,8 @@
         "url": "git+https://github.com/tonywu315/ocean-depths.git"
     },
     "scripts": {
-        "build": "webpack --config webpack.dev.js",
-        "start": "webpack serve --open --config ./webpack.dev.js"
+        "build": "webpack --config webpack.config.js",
+        "start": "webpack serve --open --config ./webpack.config.js"
     },
     "dependencies": {
         "react": "^17.0.2",
