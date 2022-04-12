@@ -9,7 +9,7 @@ export default class Home extends React.Component {
                 <Link to="/ocean" id="start-button" />
                 <img
                     id="background"
-                    src={`../assets/home.png`}
+                    src={`https://tonywu315.github.io/ocean-adventure/assets/home.png`}
                     draggable={false}
                 />
                 <div id="center-container">

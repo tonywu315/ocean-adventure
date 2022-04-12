@@ -40,7 +40,7 @@ export default class Creature extends React.Component {
             <div className="creature" style={{ top, left }}>
                 {caption}
                 <img
-                    src={`../assets/${name}.png `}
+                    src={`https://tonywu315.github.io/ocean-adventure/assets/${name}.png `}
                     height={height}
                     draggable={false}
                     onMouseEnter={() => this.setState({ caption: true })}
