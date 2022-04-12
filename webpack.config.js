@@ -1,4 +1,4 @@
-var path = require('path');
+const path = require("path");
 
 module.exports = {
     mode: "production",
@@ -6,13 +6,16 @@ module.exports = {
         host: "localhost",
         port: 8000,
         static: {
-            directory: path.resolve(__dirname, './'),
+            directory: path.resolve(__dirname, "./"),
         },
     },
     entry: "./src/index.js",
     output: {
         publicPath: "/dist/",
         filename: "./bundle.js",
+    },
+    performance: {
+        hints: false,
     },
     module: {
         rules: [
@@ -23,7 +26,7 @@ module.exports = {
             },
             {
                 test: /\.(scss)$/,
-                use: ["style-loader", "css-loader", "sass-loader",],
+                use: ["style-loader", "css-loader", "sass-loader"],
             },
             {
                 test: /\.(jpg|png|svg|ico)$/,

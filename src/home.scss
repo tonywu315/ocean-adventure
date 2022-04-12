@@ -1,3 +1,7 @@
+#home-container > * {
+    cursor: default;
+}
+
 #home-container {
     height: 100vh;
     overflow: hidden;
@@ -17,7 +21,6 @@
         transform: translate(-50%, -50%);
         display: inline-block;
         animation: fadeIn 3s linear forwards;
-        -webkit-animation: fadeIn 3s linear forwards;
 
         #center-title {
             margin-bottom: 16px;
@@ -31,28 +34,26 @@
         }
     }
 
-    #start-container {
+    #start-text {
+        position: absolute;
+        text-align: center;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         display: inline-block;
         opacity: 0;
         animation: fadeIn 3s linear forwards;
-        -webkit-animation: fadeIn 3s linear forwards;
         animation-delay: 2s;
-        -webkit-animation-delay: 2s;
-
-        #start-button {
-            position: absolute;
-            text-align: center;
-            top: 80%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            font-size: 40px;
-            text-decoration: none;
-        }
+        color: white;
+        font-size: 40px;
     }
 
-    #start-button:hover {
-        color: #cccccc;
+    #start-button {
+        width: 100vw;
+        height: 100vh;
+        animation: appear 0s linear forwards;
+        animation-delay: 2s;
+        user-select: none;
     }
 }
 
@@ -65,11 +66,12 @@
     }
 }
 
-@-webkit-keyframes fadeIn {
+@keyframes appear {
     0% {
-        opacity: 0;
+        position: static;
     }
     100% {
-        opacity: 1;
+        position: absolute;
+        z-index: 2;
     }
 }

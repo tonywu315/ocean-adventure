@@ -237,7 +237,10 @@ export default class Ocean extends React.Component {
                                 gradientTransform="rotate(90)"
                             >
                                 <stop offset="10%" stopColor="#B8DDF0" />
-                                <stop offset="90%" stopColor="#19ABDE" />
+                                <stop
+                                    offset="90%"
+                                    stopColor={backgroundColor}
+                                />
                             </linearGradient>
                         </defs>
                     </Wave>

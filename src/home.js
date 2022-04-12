@@ -6,6 +6,7 @@ export default class Home extends React.Component {
     render = () => {
         return (
             <div id="home-container">
+                <Link to="/ocean" id="start-button" />
                 <img
                     id="background"
                     src={`../assets/home.png`}
@@ -16,19 +17,9 @@ export default class Home extends React.Component {
                         Ocean <br />
                         Adventure
                     </p>
-                    <p id="center-subtitle">
-                        95% remains unexplored ...
-                    </p>
+                    <p id="center-subtitle">95% remains unexplored ...</p>
                 </div>
-                <div id="start-container">
-                    <Link
-                        to="/ocean"
-                        id="start-button"
-                        className="btn btn-primary"
-                    >
-                        Click to Start
-                    </Link>
-                </div>
+                <div id="start-text">Click to Start</div>
             </div>
         );
     };
