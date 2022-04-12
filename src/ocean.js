@@ -17,13 +17,10 @@ export default class Ocean extends React.Component {
         window.addEventListener("scroll", this.onScroll);
     }
 
-    getGradient = (percent) => {
-        return (
-            "rgb(" +
-            [startColor.map((color) => color * Math.pow(1 - percent, 3))] +
-            ")"
-        );
-    };
+    getGradient = (percent) =>
+        "rgb(" +
+        [startColor.map((color) => color * Math.pow(1 - percent, 3))] +
+        ")";
 
     onScroll = () => {
         const winScroll =
@@ -31,7 +28,7 @@ export default class Ocean extends React.Component {
         const height =
             document.documentElement.scrollHeight -
             document.documentElement.clientHeight;
-        const scroll = winScroll / height;
+        const scroll = Math.max((winScroll / height - 0.025) / 0.975, 0);
 
         if (Math.abs(this.state.scroll - scroll) > 0.01) {
             this.setState({ scroll });
@@ -40,7 +37,7 @@ export default class Ocean extends React.Component {
 
     render = () => {
         let backgroundColor = this.getGradient(this.state.scroll);
-        let lightOpacity = this.state.scroll;
+        let lightOpacity = (1 - Math.pow(1 - this.state.scroll, 2)) * 0.7 + 0.3;
 
         return (
             <div className="ocean">
@@ -73,13 +70,13 @@ export default class Ocean extends React.Component {
                     </p>
                 </div>
                 <div id="pollution" className="ocean-text">
-                    Uh-oh! Even in the deepest of places, pollution permeates.
+                    Uh-oh! Pollution permeates even the deepest of places.
                 </div>
 
                 <Creature
                     name="phytoplankton"
                     x={50}
-                    y={1350}
+                    y={1450}
                     size={150}
                     captionX={-160}
                     captionY={-180}
@@ -87,7 +84,7 @@ export default class Ocean extends React.Component {
                 <Creature
                     name="seaturtle"
                     x={76}
-                    y={1500}
+                    y={1600}
                     size={120}
                     captionX={-150}
                     captionY={-290}
@@ -95,7 +92,7 @@ export default class Ocean extends React.Component {
                 <Creature
                     name="dolphin"
                     x={10}
-                    y={1450}
+                    y={1550}
                     size={180}
                     captionX={-36}
                     captionY={-300}
@@ -103,7 +100,7 @@ export default class Ocean extends React.Component {
                 <Creature
                     name="bluefin_tuna"
                     x={40}
-                    y={1650}
+                    y={1750}
                     size={160}
                     captionX={-60}
                     captionY={-250}
@@ -111,7 +108,7 @@ export default class Ocean extends React.Component {
                 <Creature
                     name="school_of_fish"
                     x={65}
-                    y={1850}
+                    y={1950}
                     size={150}
                     captionX={-85}
                     captionY={-165}
@@ -119,7 +116,7 @@ export default class Ocean extends React.Component {
                 <Creature
                     name="tigershark"
                     x={5}
-                    y={1950}
+                    y={2050}
                     size={180}
                     captionX={0}
                     captionY={-350}
@@ -127,7 +124,7 @@ export default class Ocean extends React.Component {
                 <Creature
                     name="octopus"
                     x={40}
-                    y={2850}
+                    y={2950}
                     size={400}
                     captionX={-450}
                     captionY={16}
@@ -135,7 +132,7 @@ export default class Ocean extends React.Component {
                 <Creature
                     name="bristlemouth"
                     x={20}
-                    y={3400}
+                    y={3500}
                     size={100}
                     captionX={380}
                     captionY={-90}
@@ -143,7 +140,7 @@ export default class Ocean extends React.Component {
                 <Creature
                     name="sperm_whale"
                     x={16}
-                    y={3950}
+                    y={4050}
                     size={450}
                     captionX={175}
                     captionY={-330}
@@ -151,7 +148,7 @@ export default class Ocean extends React.Component {
                 <Creature
                     name="giant_squid"
                     x={7}
-                    y={4450}
+                    y={4550}
                     size={375}
                     captionX={650}
                     captionY={-315}
@@ -159,7 +156,7 @@ export default class Ocean extends React.Component {
                 <Creature
                     name="blobfish"
                     x={20}
-                    y={5150}
+                    y={5250}
                     size={200}
                     captionX={200}
                     captionY={-36}
@@ -167,7 +164,7 @@ export default class Ocean extends React.Component {
                 <Creature
                     name="jellyfish"
                     x={20}
-                    y={6100}
+                    y={6200}
                     size={800}
                     captionX={450}
                     captionY={240}
@@ -175,7 +172,7 @@ export default class Ocean extends React.Component {
                 <Creature
                     name="red_velvet_whale_fish"
                     x={50}
-                    y={7950}
+                    y={8050}
                     size={60}
                     captionX={-480}
                     captionY={-135}
@@ -183,7 +180,7 @@ export default class Ocean extends React.Component {
                 <Creature
                     name="humpback_angler_fish"
                     x={15}
-                    y={8950}
+                    y={9050}
                     size={250}
                     captionX={415}
                     captionY={-40}
@@ -191,14 +188,14 @@ export default class Ocean extends React.Component {
                 <Creature
                     name="humpback_angler_fish"
                     x={25}
-                    y={9000}
+                    y={9100}
                     size={40}
                     nocaption
                 />
                 <Creature
                     name="hydrothermal_vent"
                     x={5}
-                    y={9647}
+                    y={9746}
                     size={500}
                     captionX={380}
                     captionY={0}
@@ -206,7 +203,7 @@ export default class Ocean extends React.Component {
                 <Creature
                     name="vulcanoctopus_hydrothermalis"
                     x={8}
-                    y={9807}
+                    y={9906}
                     size={200}
                     captionX={380}
                     captionY={-30}
@@ -214,7 +211,7 @@ export default class Ocean extends React.Component {
                 <Creature
                     name="plastic_bag"
                     x={80}
-                    y={9850}
+                    y={9950}
                     size={100}
                     captionX={0}
                     captionY={-400}
@@ -236,9 +233,13 @@ export default class Ocean extends React.Component {
                                 id="gradient"
                                 gradientTransform="rotate(90)"
                             >
-                                <stop offset="10%" stopColor="#B8DDF0" />
+                                <stop offset="0%" stopColor="#B8DDF0" />
+                                <stop offset="20%" stopColor="#7FCBEC" />
+                                <stop offset="40%" stopColor="#52BDE4" />
+                                <stop offset="60%" stopColor="#32B3E1" />
+                                <stop offset="80%" stopColor="#1FADDF" />
                                 <stop
-                                    offset="90%"
+                                    offset="100%"
                                     stopColor={backgroundColor}
                                 />
                             </linearGradient>

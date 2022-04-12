@@ -11,7 +11,7 @@ export default class Creature extends React.Component {
         const name = this.props.name;
         const left = this.props.x + "%";
         const top = this.props.y + "px";
-        const height = this.props.size;
+        const height = this.props.size + "px";
 
         let caption = <></>;
         if (this.state.caption && !this.props.nocaption) {
